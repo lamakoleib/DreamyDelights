@@ -1,4 +1,4 @@
-const Navbar = () =>{
+const MiniNav = () =>{
     return(
 
         <div classNameName="nav-content">
@@ -15,23 +15,21 @@ const Navbar = () =>{
 
             
 
-            <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <div className="collapse navbar-collapse justify-content-end align-center" id="mini-nav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a href="#landing" className="nav-link">HOME</a>
+                        <a href="/" className="nav-link">HOME</a>
                     </li>
-                    <li className="nav-item">
-                        <a href="#about" className="nav-link">ABOUT</a>
-                    </li>
+                    
                     <li className="nav-item">
                         <a href="/cakes" className="nav-link">CAKES</a>
                     </li>
+
                     <li className="nav-item">
                         <a href="/photogallery" className="nav-link">GALLERY</a>
                     </li>
-                    <li className="nav-item">
-                        <a href="#contact-us" className="nav-link">CONTACT US</a>
-                    </li>
+                    
+                    
                 </ul>
             </div>
         </div>
@@ -56,4 +54,4 @@ const Navbar = () =>{
     );
 }
 
-export default Navbar;
+export default MiniNav;
