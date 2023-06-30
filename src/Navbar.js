@@ -27,7 +27,7 @@ const Navbar = () =>{
                         <a href="#our-doctors" className="nav-link">CAKES</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#services" className="nav-link">GALLERY</a>
+                        <a href="#gallery" className="nav-link">GALLERY</a>
                     </li>
                     <li className="nav-item">
                         <a href="#contact-us" className="nav-link">CONTACT US</a>

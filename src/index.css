@@ -42,6 +42,7 @@
 }
 
 .navbar a{
+  font-weight: 600;
   margin-left: 15px;
   text-decoration: none;
   padding: 7px;
@@ -91,6 +92,7 @@
 .discover-btn{
   
   margin-top: 30px;
+  margin-right: 20px;
   background-color: #bbd6c7;
   border-radius: 25px;
   color: white;
@@ -98,6 +100,8 @@
   border-width: 0px;
   
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   transition: 0.3s;
   font-size: 18px;
   font-weight: 600;
@@ -113,6 +117,22 @@
 
 }
 
+#explore-btn{
+  background-color: white;
+  color: #f394af;
+  border: 1px solid #f394af;
+
+
+}
+
+#explore-btn:hover{
+  background-color: #f394af;
+  color: white;
+  
+  box-shadow: 0 4px 8px white;
+
+}
+
 
 
 .home-content{
@@ -124,6 +144,8 @@
   background-repeat: no-repeat;
   height:100vh;
   border-bottom: 40px solid #ddeae3;
+  
+  
   
  
 }
@@ -161,7 +183,7 @@
 
 .info-2{
   
-  margin-bottom: 280px;
+  margin-bottom: 100px;
   background-image: url('images/bg2.png');
   background-size: cover;
    background-position: center;
@@ -253,6 +275,47 @@
   transition-timing-function: ease-in-out;
   cursor: pointer;
 
+}
+
+
+
+.photo-gal {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+  margin-bottom: 100px;
+  
+  
+}
+
+.photo{
+  height: 35vh;
+  
+  margin: 30px;
+  border: 15px solid #ddeae3;
+  
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 1);
+  border-radius: 30px;
+}
+
+.photo:nth-child(even){
+
+  border: 15px solid #fef1f5;
+  box-shadow: 0 4px 8px rgb(243, 203, 215);
+
+}
+
+.photo-gallery h1{
+  font-size: 55px;
+  font-weight: 700;
+  color: #f394af;
+
+}
+
+.photo-gallery p{
+  font-size: 25px;
 }
 
 
