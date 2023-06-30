@@ -1,36 +1,36 @@
 const Navbar = () =>{
     return(
 
-        <div className="nav-content">
-            <nav class="navbar navbar-expand-md fixed-top navbar-light">
-        <div class="container-xxl">
-            <a href="#landing" class="navbar-brand">
-                <span class="fw-bold nav-title ">Dreamy Delights
+        <div classNameName="nav-content">
+            <nav className="navbar navbar-expand-md fixed-top navbar-light">
+        <div className="container-xxl">
+            <a href="#landing" className="navbar-brand">
+                <span className="fw-bold nav-title ">Dreamy Delights
             </span>
             </a>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
 
             
 
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#landing" class="nav-link">HOME</a>
+            <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <a href="#landing" className="nav-link">HOME</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">ABOUT</a>
+                    <li className="nav-item">
+                        <a href="#about" className="nav-link">ABOUT</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#our-doctors" class="nav-link">CAKES</a>
+                    <li className="nav-item">
+                        <a href="#our-doctors" className="nav-link">CAKES</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">GALLERY</a>
+                    <li className="nav-item">
+                        <a href="#services" className="nav-link">GALLERY</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#contact-us" class="nav-link">CONTACT US</a>
+                    <li className="nav-item">
+                        <a href="#contact-us" className="nav-link">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -38,10 +38,10 @@ const Navbar = () =>{
     </nav>
         </div>
         
-        // <nav className="navbar">
+        // <nav classNameName="navbar">
 
-        // <h1 className="nav-title">Dreamy Delights</h1>
-        //     <div className="links">
+        // <h1 classNameName="nav-title">Dreamy Delights</h1>
+        //     <div classNameName="links">
         //         <a href="/">HOME</a>
         //         <a href="/about">ABOUT</a>
         //         <a href="/shop">CAKES</a>
