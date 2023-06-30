@@ -1,5 +1,5 @@
 import cakePic from "./images/cake_contact.jpg";
-import PhotoGallery from "./PhotoGallery";
+
 
 const  Home = () => {
     return (  
