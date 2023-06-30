@@ -2,7 +2,7 @@
 
 import Navbar from './Navbar';
 import Home from './Home';
-import PhotoGallery from './PhotoGallery';
+
 
 import logo from './images/cake_contact.jpg'
 import React, {useState} from 'react';
