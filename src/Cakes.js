@@ -1,6 +1,13 @@
 const Cakes = () => {
     return ( 
-        <h1>Explore sweet Creations</h1>
+
+        <div className="cake-content">
+
+            <h1>Explore sweet Creations</h1>
+             <h6>Choose a base model and request to get it customized to your liking!</h6>
+
+        </div>
+        
      );
 }
  

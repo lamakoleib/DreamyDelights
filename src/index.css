@@ -81,6 +81,7 @@
 .intro-text{
   margin-top: 30px;
   max-width: 80%;
+  margin-bottom: 50px;
   
   font-size: 25px;
   
@@ -105,6 +106,7 @@
   transition: 0.3s;
   font-size: 18px;
   font-weight: 600;
+  text-decoration: none;
 
 }
 
@@ -125,11 +127,24 @@
 
 }
 
+#cancel-btn{
+  background-color: white;
+  color: #f394af;
+  border: 1px solid #f394af;
+}
+
 #explore-btn:hover{
   background-color: #f394af;
   color: white;
   
   box-shadow: 0 4px 8px white;
+
+}
+
+#cancel-btn:hover{
+  
+  
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 0.5);
 
 }
 
@@ -183,7 +198,7 @@
 
 .info-2{
   
-  margin-bottom: 100px;
+  margin-bottom: 180px;
   background-image: url('images/bg2.png');
   background-size: cover;
    background-position: center;
@@ -249,7 +264,7 @@
 }
 
 .right-col{
-  margin-top: 20px;
+  
 }
 
 .send-msg{
@@ -265,7 +280,7 @@
   transition: 0.3s;
   font-size: 18px;
   font-weight: 600;
-  margin-top: 20px;
+  
 }
 
 .send-msg:hover{
@@ -319,6 +334,32 @@
   font-size: 25px;
 }
 
+#contact-modal-title{
+  color: #f394af;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.md-header{
+  padding: 20px;
+}
+
+.modal-body p{
+  padding: 10px;
+}
+
+.modal-content{
+  border-radius: 30px !important;
+  width: 100%;
+}
+
+.longInput{
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+  
+  border: 1px solid #bbd6c7;
+}
 
 
 

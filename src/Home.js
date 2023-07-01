@@ -1,4 +1,5 @@
 import cakePic from "./images/cake_contact.jpg";
+import PhotoGallery from './PhotoGallery';
 
 
 const  Home = () => {
@@ -9,8 +10,8 @@ const  Home = () => {
 
                 <h1 className="title-home">Where sweet dreams come to life!</h1>
                 <p className="intro-text">Indulge in a world of flavors, where creativity knows no bounds. From classic favorites to unique and innovative creations, our talented cake artisans bring their expertise and passion to every masterpiece they create.</p>
-                <button className="discover-btn">DISCOVER CAKES</button>
-                <button id="explore-btn"className="discover-btn">EXPLORE GALLERY</button>
+                <a href="/cakes"className="discover-btn">DISCOVER CAKES</a>
+                <a href="/photogallery" id="explore-btn"className="discover-btn text-center">EXPLORE GALLERY</a>
 
                 </div>
                 
@@ -81,15 +82,54 @@ const  Home = () => {
                                     Address: 200 Vanguard Dr, Orléans, ON K4A 0T8
                                 </h6>
 
-                                <button className="send-msg">
-                                    Send Message
-                                </button>
+                                <div className="row my-5 align-items-center justify-content-center">
+                                    <div className="text-center">
+                                       
+                                    <button type="button" className="send-msg " data-bs-toggle="modal" data-bs-target="#contact-box">
+                    
+                                        Send Message
+                         
+                                    </button>
+
+                                     </div>
+                    
+                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
+                
             </section>
+
+
+        <div className="modal fade" id="contact-box" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content text-center">
+            <div className="modal-header">
+              <h5 className="modal-title" id="contact-modal-title">Send a message</h5>
+              
+            </div>
+            <div className="modal-body text-center">
+             
+             <h4 className="md-header">Is there anything we can help with?</h4>
+             <p>Let us know by typing in your questions and/or concerns and we will respond as soon as possible!</p>
+             
+
+              <div className="input-field text-center">
+                <textarea className="longInput" cols="30" rows="10" placeholder="What is your concern?"></textarea>
+              </div>
+            </div>
+            <div className="modal-footer">
+              <button type="button" id="cancel-btn"className="discover-btn cancel-modal " data-bs-dismiss="modal">Cancel</button>
+              <button type="button" className="send-msg confirm-modal "  data-bs-dismiss="modal">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
             
             
