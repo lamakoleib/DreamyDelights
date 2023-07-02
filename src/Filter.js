@@ -185,9 +185,7 @@ export default function Filter({ filter, setFilter }) {
             id="customRange2"
           ></input>
 
-          <div className="button-wrapper text-center">
-            <button className="apply-btn discover-btn">APPLY</button>
-          </div>
+          
         </div>
       </div>
     </div>
