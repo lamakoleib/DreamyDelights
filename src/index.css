@@ -359,5 +359,208 @@
   border: 1px solid #bbd6c7;
 }
 
+.card-body img{
+  height: 30vh;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.card{
+  background-color: #ddeae3 !important;
+  border-color: #ddeae3 !important;
+  border-radius: 30px !important;
+  margin: 18px;
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 0.8);
+
+}
+
+.cards-wrapper{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  
+  
+ 
+}
+
+.price{
+  border: 1px solid #f394af !important;
+  background-color: #ddeae3 !important;
+  border-radius: 30px !important;
+  margin: 10px;
+  padding: 8px;
+  color: #f394af !important;
+  font-weight: 600 !important;
+  cursor: default !important;
+}
+
+.card-btn{
+  border-radius: 30px !important;
+  padding: 8px;
+  margin: 10px;
+  background-color: #f394af !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-color: #f394af  !important;
+
+
+}
+
+.cake-content{
+  margin-top: 150px;
+  
+}
+
+.cake-content h1{
+  font-size: 55px;
+  font-weight: 700;
+  color: #f394af;
+}
+
+.cake-content h6{
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 22px;
+}
+
+#filter-card{
+  background-color: #fef1f5 !important;
+  border: 1px solid white !important;
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 0);
+  padding: 10px;
+  
+
+}
+
+.filter-body p{
+  font-weight: 600;
+  padding: 10px;
+  
+  
+}
+
+.options{
+  
+  margin-bottom: 20px;
+}
+
+.form-check-label{
+  padding: 2px;  
+}
+
+.price-label{
+  font-weight: 600;
+  padding: 10px;
+
+}
+
+.filter-body h2{
+  color: #f394af;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.apply-btn{
+  background-color: #f394af !important;
+  
+}
+
+.page-wrapper{
+  padding: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+  
+}
+
+.page-wrapper h1{
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #f394af;
+}
+
+.form-wrapper{
+  background-color: #ddeae3;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.form-group{
+  margin-bottom: 20px;
+}
+
+.form-group input{
+  border-radius: 30px !important;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 0.5);
+  
+
+}
+
+.form-select{
+  padding: 15px !important;
+  border-radius: 30px !important;
+}
+
+.form-group label{
+  padding: 25px;
+  font-weight: 600;
+}
+
+#select-image{
+  
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 0);
+
+}
+
+.comments{
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 0.5);
+  border: 1px solid white;
+}
+
+.continue-btn{
+  text-decoration: none;
+}
+
+#rc-page{
+  margin-top: 230px;
+  background-color: #fef1f5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#confirm-title{
+  font-size: 50px;
+  font-weight: 700;
+  color: #f394af;
+}
+
+#mini-text{
+  padding: 20px;
+}
+
+#rc-page p{
+  padding: 20px;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  font-size: 20px
+}
+
+.go-back-btn{
+  margin-top: 30px;
+  padding: 10px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#custom .modal-body{
+  width: 100%;
+}
+
+
+
 
 
