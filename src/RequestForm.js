@@ -4,7 +4,7 @@ const RequestForm = () => {
     return ( 
         <div className="page-wrapper">
             <h1 className="rq-title">Custom Cake Request</h1>
-            <div className="form-wrapper">
+            <div className="form-wrapper ">
                 <form action="">
                     <div className="form-row row justify-content-center align-items-center">
                         <div className="form-group col-md-6 ">

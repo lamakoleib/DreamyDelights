@@ -27,9 +27,9 @@ const Card = (props) => {
              <h4 className="md-header">Add some details to your cake!</h4>
 
              <div className="row">
-                <div className="col-md-6">
+                <div id="filling-options"className="col-md-6">
                 <label >Add Preferred Filling</label>
-                <select class="form-select" aria-label="Default select example" required>
+                <select className="form-select" aria-label="Default select example" required>
                   <option selected>Not Selected</option>
                   <option value="1">Chocolate</option>
                   <option value="2">Vanilla</option>
@@ -40,9 +40,9 @@ const Card = (props) => {
                 </select>
 
                 </div>
-                <div className="col-md-6">
+                <div id="frosting-options"className="col-md-6">
                 <label >Add Preferred Frosting</label>
-                <select class="form-select" aria-label="Default select example" required>
+                <select className="form-select" aria-label="Default select example" required>
                   <option selected>Not Selected</option>
                   <option value="1">Chocolate</option>
                   <option value="2">Vanilla</option>
@@ -55,8 +55,8 @@ const Card = (props) => {
                 </div>
 
                 <div className="col-md-6">
-                <label >Fruit Preference</label>
-                <div className="options">
+                <label className='label-title'>Fruit Preference</label>
+                <div id="fruit-options"className="options">
                     <div className="form-check">
                         <input type="checkbox" className="form-check-input" value="" id="flexCheckDefault" />
                         <label className="form-check-label" for="flexCheckDefault">Kiwi</label>
@@ -86,8 +86,8 @@ const Card = (props) => {
                 </div>
 
                 <div className="col-md-6">
-                <label >Nuts Preference</label>
-                <div className="options">
+                <label className='label-title'>Nuts Preference</label>
+                <div id="nuts-options"className="options">
                     <div className="form-check">
                         <input type="checkbox" className="form-check-input" value="" id="flexCheckDefault" />
                         <label className="form-check-label" for="flexCheckDefault">Walnuts</label>
