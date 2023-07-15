@@ -21,22 +21,22 @@ function App() {
             </Route>
 
             <Route exact path="/photogallery">
-            <Navbar />
+              <MiniNav />
               <PhotoGallery />
             </Route>
 
             <Route exact path="/cakes">
-            <Navbar />
+              <MiniNav />
               <Cakes />
             </Route>
 
             <Route exact path="/rqform">
-            <Navbar />
+              <MiniNav />
               <RequestForm />
             </Route>
 
             <Route exact path="/receipt">
-            <Navbar />
+              <MiniNav />
               <Receipt />
             </Route>
           </Switch>
