@@ -31,6 +31,12 @@ export default function MiniNav() {
               </li>
 
               <li className="nav-item">
+                <a href="/" className="nav-link">
+                  ABOUT
+                </a>
+              </li>
+
+              <li className="nav-item">
                 <a href="/cakes" className="nav-link">
                   CAKES
                 </a>
@@ -39,6 +45,12 @@ export default function MiniNav() {
               <li className="nav-item">
                 <a href="/photogallery" className="nav-link">
                   GALLERY
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a href="/" className="nav-link">
+                  CONTACT US
                 </a>
               </li>
             </ul>
