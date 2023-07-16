@@ -1,5 +1,7 @@
 import cakePic from "./images/cake_contact.jpg"
 
+import video from './videos/video1.mp4'
+
 export default function Home() {
   return (
     <div className="home">
@@ -26,6 +28,13 @@ export default function Home() {
       </div>
 
       <section id="about">
+
+      <div className="info-3">
+          <div className="container text-center">
+            <h1>Hassle-free Experience</h1>
+            <video src={video} autoPlay loop muted/>
+          </div>
+        </div>
         <div className=" info-1">
           <div className="container text-center">
             <h1>Who are we?</h1>
@@ -45,6 +54,8 @@ export default function Home() {
           </div>
         </div>
 
+        
+
         <div className="info-2">
           <div className="container text-center">
             <h1>Hassle-free Experience</h1>
@@ -57,6 +68,8 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        
       </section>
       {/* <section id="gallery">
 
