@@ -38,6 +38,22 @@ export default function Filter({ filter, setFilter }) {
       maxPrice: value,
     }))
   }
+  const handleMinPriceChange = (e) => {
+    const { value } = e.target
+    setFilter((prev) => ({
+      ...prev,
+      minPrice: value,
+    }))
+  }
+
+  if (!filter.minPrice) {
+    filter.minPrice = null; // Set minimum price as null or undefined
+  }
+  if (!filter.maxPrice) {
+    filter.maxPrice = null; // Set maximum price as null or undefined
+  }
+
+  
 
   return (
     <div id="filter-card" className="card">
@@ -173,17 +189,62 @@ export default function Filter({ filter, setFilter }) {
           </div>
 
           <label htmlFor="customRange2" className="form-label price-label">
-            Max Price: {filter.maxPrice}
+            Price Range
           </label>
-          <input
+           <input
             onChange={handleMaxPriceChange}
             value={filter.maxPrice}
             type="range"
             className="form-range"
             min="100"
-            max="1000"
+            max="500"
             id="customRange2"
-          ></input>
+          >
+
+          </input> 
+
+          <div className="row price-inputs">
+
+            <div className="col-6">
+            <input 
+            onChange={handleMinPriceChange}
+            value={filter.minPrice}
+            type="number"
+            className="form-control col-6"
+            min="100"
+            max="500"
+            id="minPriceInput"
+            placeholder="Minimum Price"
+            inputMode="numeric"
+          />
+
+            </div>
+
+          
+
+          <div className="col-6">
+          <input
+            onChange={handleMaxPriceChange}
+            value={filter.maxPrice}
+            type="number"
+            className="form-control"
+            min="100"
+            max="500"
+            id="maxPriceInput"
+            placeholder="Maximum Price"
+          />
+
+          </div>
+
+          
+
+          </div>
+
+          
+
+          
+
+          
 
           
         </div>

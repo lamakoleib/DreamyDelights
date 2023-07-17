@@ -360,8 +360,8 @@
 }
 
 .photo-gallery h1{
-  font-size: 55px;
-  font-weight: 700;
+  font-family: 'SquishyBlue', sans-serif;
+  font-size: 60px;
   color: #f394af;
   margin-top: 200px;
 
@@ -452,9 +452,11 @@
 }
 
 .cake-content h1{
-  font-size: 55px;
-  font-weight: 700;
+  
+  
   color: #f394af;
+  font-family: 'SquishyBlue', sans-serif;
+  font-size: 60px;
 }
 
 .cake-content h6{
@@ -616,6 +618,20 @@
 #filling-options select, #frosting-options select{
   border-color: #f394af !important;
 }
+
+.price-inputs input{
+
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  margin-top: 10px;
+
+  
+  
+}
+
+
 
 
 
