@@ -49,6 +49,11 @@ export default function Navbar() {
                   CONTACT US
                 </a>
               </li>
+              <li className="nav-item">
+                <a href="#faq" className="nav-link">
+                  HELP
+                </a>
+              </li>
             </ul>
           </div>
         </div>

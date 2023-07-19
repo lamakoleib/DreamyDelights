@@ -69,13 +69,69 @@ export default function Home() {
           </div>
         </div>
 
+        <div id="faq"className="faq-wrapper">
+          <div className="container text-center">
+            <h1>FAQ</h1>
+            <h5>Not sure about something? Take a look at some frequently asked questions down here or contact us directly!</h5>
+            <div className="accordion" id="accordionPanelsStayOpenExample">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="panelsStayOpen-headingOne">
+                  <button className= "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                  How far in advance should I place my order?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                  <div className="accordion-body">
+                  We recommend placing your order at least 2-3 weeks in advance, especially for custom cakes. For weddings and large events, we suggest booking early to secure your date.
+                  </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  What are your delivery options?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div className="accordion-body">
+                  We offer both local and nationwide delivery services. Rest assured that your cake will arrive fresh and on time, ready to add joy to your celebration.
+                  </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="panelsStayOpen-headingThree">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Do you offer cake delivery on weekends?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div className="accordion-body">
+                  Yes, we offer cake delivery services on weekends. However, availability may vary based on your location and the delivery schedule.
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="panelsStayOpen-headingFour">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  Can I schedule a cake tasting consultation?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div className="accordion-body">
+                  Of course! We offer cake tasting consultations for weddings and large events. Contact us to schedule an appointment and discover the delightful flavors we have to offer.
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         
       </section>
-      {/* <section id="gallery">
-
-                <PhotoGallery/>
-
-            </section> */}
+      
 
       <section id="contact-us">
         <div className="container">
@@ -85,7 +141,7 @@ export default function Home() {
           <div className="container">
             <div className="row justify-content-center align-items-center">
               <div className="col-lg-6 text-center">
-                <img src={cakePic} className="cake-pic-contact" alt="logo" />
+                <img src={cakePic} className="cake-pic-contact" alt="cake on a stand" />
 
                 <h6 className="left-col">
                   <li>Email: dreamydelights@gmail.com</li>

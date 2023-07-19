@@ -260,6 +260,33 @@
    
  }
 
+ .faq-wrapper{
+  margin-bottom: 400px;
+ }
+
+ .faq-wrapper h1{
+  padding: 20px;
+  
+  color: #f394af;
+  font-size: 70px;
+  font-family: "SquishyBlue", sans-serif;
+ }
+
+ .faq-wrapper h5{
+  padding: 30px;
+ }
+
+ .accordion-item{
+  border-radius: 30px !important;
+  padding: 25px;
+  margin: 35px;
+  border: 1px solid #f394af !important;
+ }
+
+ 
+
+
+
  #contact-us{
   background-color: #ddeae3;
  }
@@ -289,6 +316,7 @@
   border-radius: 40px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(187, 214, 199, 1);
+
   margin-bottom: 60px;
 }
 
@@ -404,12 +432,20 @@
   margin: 10px;
 }
 
+.cakeCard .card-title{
+ 
+  color: #f394af;
+  font-weight: 800
+  /* font-family: "SquishyBlue", sans-serif; */
+}
+
 .card{
   background-color: #ddeae3 !important;
   border-color: #ddeae3 !important;
   border-radius: 30px !important;
   margin: 18px;
   box-shadow: 0 4px 8px rgba(187, 214, 199, 0.8);
+  
 
 }
 

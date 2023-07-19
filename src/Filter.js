@@ -38,20 +38,9 @@ export default function Filter({ filter, setFilter }) {
       maxPrice: value,
     }))
   }
-  const handleMinPriceChange = (e) => {
-    const { value } = e.target
-    setFilter((prev) => ({
-      ...prev,
-      minPrice: value,
-    }))
-  }
+  
 
-  if (!filter.minPrice) {
-    filter.minPrice = null; // Set minimum price as null or undefined
-  }
-  if (!filter.maxPrice) {
-    filter.maxPrice = null; // Set maximum price as null or undefined
-  }
+  
 
   
 
@@ -189,37 +178,21 @@ export default function Filter({ filter, setFilter }) {
           </div>
 
           <label htmlFor="customRange2" className="form-label price-label">
-            Price Range
+            Price Limit
           </label>
-           <input
+          <input
             onChange={handleMaxPriceChange}
             value={filter.maxPrice}
             type="range"
             className="form-range"
             min="100"
-            max="500"
+            max="700"
             id="customRange2"
-          >
-
-          </input> 
-
-          <div className="row price-inputs">
-
-            <div className="col-6">
-            <input 
-            onChange={handleMinPriceChange}
-            value={filter.minPrice}
-            type="number"
-            className="form-control col-6"
-            min="100"
-            max="500"
-            id="minPriceInput"
-            placeholder="Minimum Price"
-            inputMode="numeric"
           />
 
-            </div>
+          <div className="row price-inputs justify-content-center">
 
+            
           
 
           <div className="col-6">
@@ -229,7 +202,7 @@ export default function Filter({ filter, setFilter }) {
             type="number"
             className="form-control"
             min="100"
-            max="500"
+            max="700"
             id="maxPriceInput"
             placeholder="Maximum Price"
           />

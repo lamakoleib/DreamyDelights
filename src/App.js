@@ -5,6 +5,7 @@ import MiniNav from "./MiniNav"
 import Home from "./Home"
 import PhotoGallery from "./PhotoGallery"
 import Receipt from "./Receipt"
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import React from "react"
@@ -39,6 +40,9 @@ function App() {
               <MiniNav />
               <Receipt />
             </Route>
+
+            
+           
           </Switch>
         </div>
       </div>

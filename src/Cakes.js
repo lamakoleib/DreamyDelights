@@ -25,7 +25,7 @@ export default function Cakes() {
       nuts: false,
       dairy: false,
     },
-    maxPrice: 1000,
+    maxPrice: 900,
   })
 
   useEffect(() => {
@@ -34,16 +34,35 @@ export default function Cakes() {
 
   useEffect(() => {
     const { wedding, birthday, anniversary } = filter.theme
-    const filterCategory =
-      (wedding ? "wedding" : "") +
-      (birthday ? "birthday" : "") +
-      (anniversary ? "anniversary" : "")
+
+    var filterCategory =
+    (birthday ? "birthday," : "") + (anniversary ? "anniversary," : "") + (wedding ? "wedding" : "")
+
+  if (filterCategory.length <= 1) {
+    filterCategory = []
+  } else {
+    filterCategory = filterCategory.split(",")
+  }
+    // const filterCategory =
+    //   (wedding ? "wedding" : "") +
+    //   (birthday ? "birthday" : "") +
+    //   (anniversary ? "anniversary" : "")
 
     const { chocolate, vanilla, strawberry } = filter.filling
-    const fillingFilter =
-      (chocolate ? "chocolate" : "") +
-      (vanilla ? "vanilla" : "") +
-      (strawberry ? "strawberry" : "")
+
+    var fillingFilter =
+      (chocolate ? "chocolate," : "") + (vanilla ? "vanilla," : "") + (strawberry ? "strawberry" : "")
+
+    if (fillingFilter.length <= 1) {
+      fillingFilter = []
+    } else {
+      fillingFilter = fillingFilter.split(",")
+    }
+
+    // const fillingFilter =
+    //   (chocolate ? "chocolate" : "") +
+    //   (vanilla ? "vanilla" : "") +
+    //   (strawberry ? "strawberry" : "")
 
     const { gluten, nuts, dairy } = filter.allergens
 
@@ -57,12 +76,16 @@ export default function Cakes() {
     }
     const filtered = cakes.filter((cake) => {
       return (
-        (filterCategory.length <= 1
+        (filterCategory.length ===0
           ? true
-          : filterCategory.includes(cake.category)) &&
-        (fillingFilter.length <= 1
+          : cake.category.some((categories) =>
+              filterCategory.includes(categories)
+            )) &&
+        (fillingFilter.length ===0
           ? true
-          : fillingFilter.includes(cake.filling)) &&
+          : cake.filling.some((fillings) =>
+              fillingFilter.includes(fillings)
+            )) &&
         (allergensFilter.length === 0
           ? true
           : !cake.allergens.some((allergen) =>
@@ -98,7 +121,7 @@ export default function Cakes() {
                   img={cakeImage}
                   title={cake.title}
                   desc={cake.description}
-                  price={cake.price}
+                  price={"$"+cake.price}
                 />
               )
             })}
