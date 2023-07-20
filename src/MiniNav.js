@@ -53,6 +53,12 @@ export default function MiniNav() {
                   CONTACT US
                 </a>
               </li>
+
+              <li className="nav-item">
+                <a href="/" className="nav-link">
+                  HELP
+                </a>
+              </li>
             </ul>
           </div>
         </div>

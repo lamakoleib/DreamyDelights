@@ -42,7 +42,7 @@ export default function Card(props) {
                   <label>Add Preferred Filling</label>
                   <select
                     className="form-select"
-                    aria-label="Default select example"
+                    aria-label="select filling"
                     defaultValue="Not Selected"
                     required
                   >
@@ -57,7 +57,7 @@ export default function Card(props) {
                   <label>Add Preferred Frosting</label>
                   <select
                     className="form-select"
-                    aria-label="Default select example"
+                    aria-label="select frosting"
                     defaultValue="Not Selected"
                     required
                   >

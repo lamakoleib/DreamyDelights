@@ -1,4 +1,16 @@
+
+import {initReactI18next } from "react-i18next";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
+
 export default function Navbar() {
+  const {t} = useTranslation();
+
+  const onChange=(event)=>{
+
+    i18n.changeLanguage(event.target.value);
+
+  };
   return (
     <div classNameName="nav-content">
       <nav className="navbar navbar-expand-md fixed-top navbar-light">
@@ -26,32 +38,32 @@ export default function Navbar() {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a href="#landing" className="nav-link">
-                  HOME
+                  {t("homeNav")}
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#about" className="nav-link">
-                  ABOUT
+                  {t("aboutNav")}
                 </a>
               </li>
               <li className="nav-item">
                 <a href="/cakes" className="nav-link">
-                  CAKES
+                  {t("cakesNav")}
                 </a>
               </li>
               <li className="nav-item">
                 <a href="/photogallery" className="nav-link">
-                  GALLERY
+                  {t("galleryNav")}
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#contact-us" className="nav-link">
-                  CONTACT US
+                  {t("contactNav")}
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#faq" className="nav-link">
-                  HELP
+                  {t("helpNav")}
                 </a>
               </li>
             </ul>

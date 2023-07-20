@@ -202,7 +202,7 @@ export default function Filter({ filter, setFilter }) {
             type="number"
             className="form-control"
             min="100"
-            max="700"
+            max="900"
             id="maxPriceInput"
             placeholder="Maximum Price"
           />

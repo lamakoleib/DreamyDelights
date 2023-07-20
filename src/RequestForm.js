@@ -1,7 +1,9 @@
 export default function RequestForm() {
+
+  
   return (
     <div className="page-wrapper">
-      <h1 className="rq-title">Custom Cake Request</h1>
+      <h2 className="rq-title">Custom Cake Request</h2>
       <div className="form-wrapper ">
         <form action="">
           <div className="form-row row justify-content-center align-items-center">
@@ -21,6 +23,7 @@ export default function RequestForm() {
                 class="form-control"
                 id="lastName"
                 placeholder="Last Name"
+                required
               ></input>
             </div>
             <div className="form-group col-md-6 ">
