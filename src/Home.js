@@ -35,7 +35,14 @@ q3:"Do you offer cake delivery on weekends?",
 a3:"Yes, we offer cake delivery services on weekends. However, availability may vary based on your location and the delivery schedule.",
 q4:"Can I schedule a cake tasting consultation?",
 a4:"Of course! We offer cake tasting consultations for weddings and large events. Contact us to schedule an appointment and discover the delightful flavors we have to offer.",
-};
+contact:"Contact Us",
+address:"Address",
+cancel:"Cancel",
+send:"Send Message",
+sendMsg:"Send a message",
+mdHeader:"Is there anything we can help with?",
+modaltxt:" Let us know by typing in your questions and/or concerns and we will respond as soon as possible!",
+placeholder:"What is your concern?"};
 
 const translationFr = {
 homeNav:"ACCUEIL",
@@ -65,7 +72,14 @@ q3:"Offrez-vous la livraison de gâteaux le week-end ?",
 a3:"Oui, nous offrons des services de livraison de gâteaux le week-end. Cependant, la disponibilité peut varier en fonction de votre emplacement et du calendrier de livraison.",
 q4:"Puis-je planifier une consultation de dégustation de gâteaux ?",
 a4:"Bien sûr! Nous offrons des consultations de dégustation de gâteaux pour les mariages et les grands événements. Contactez-nous pour prendre rendez-vous et découvrir les délicieuses saveurs que nous avons à offrir.",
-};
+contact:"Contactez-nous",
+address:"Adresse",
+cancel:"Annuler",
+send:"Envoyer Message",
+sendMsg:"Envoyer une message",
+mdHeader:"Pouvons-nous vous aider ?",
+modaltxt:"Faites-nous savoir en tapant vos questions et/ou préoccupations et nous vous répondrons dans les plus brefs délais !",
+placeholder:"Quelle est votre inquiétude?"};
 
 i18n
   .use(initReactI18next)
@@ -224,7 +238,7 @@ export default function Home() {
       <section id="contact-us">
         <div className="container">
           <div className="text-center">
-            <h1>Contact Us</h1>
+            <h1>{t("contact")}</h1>
           </div>
           <div className="container">
             <div className="row justify-content-center align-items-center">
@@ -252,7 +266,7 @@ export default function Home() {
                 ></iframe>
 
                 <h6 className="right-col">
-                  Address: 200 Vanguard Dr, Orléans, ON K4A 0T8
+                  {t("address")}: 200 Vanguard Dr, Orléans, ON K4A 0T8
                 </h6>
 
                 <div className="row my-5 align-items-center justify-content-center">
@@ -263,7 +277,7 @@ export default function Home() {
                       data-bs-toggle="modal"
                       data-bs-target="#contact-box"
                     >
-                      Send Message
+                      {t("send")}
                     </button>
                   </div>
                 </div>
@@ -285,14 +299,13 @@ export default function Home() {
           <div className="modal-content text-center">
             <div className="modal-header">
               <h5 className="modal-title" id="contact-modal-title">
-                Send a message
+                {t("sendMsg")}
               </h5>
             </div>
             <div className="modal-body text-center">
-              <h4 className="md-header">Is there anything we can help with?</h4>
+              <h4 className="md-header">{t("mdHeader")}</h4>
               <p>
-                Let us know by typing in your questions and/or concerns and we
-                will respond as soon as possible!
+               {t("modaltxt")}
               </p>
 
               <div className="input-field text-center">
@@ -300,7 +313,7 @@ export default function Home() {
                   className="longInput"
                   cols="30"
                   rows="10"
-                  placeholder="What is your concern?"
+                  placeholder={t("placeholder")}
                 ></textarea>
               </div>
             </div>
@@ -311,14 +324,14 @@ export default function Home() {
                 className="discover-btn cancel-modal "
                 data-bs-dismiss="modal"
               >
-                Cancel
+                {t("cancel")}
               </button>
               <button
                 type="button"
                 className="send-msg confirm-modal "
                 data-bs-dismiss="modal"
               >
-                Send Message
+                {t("send")}
               </button>
             </div>
           </div>
