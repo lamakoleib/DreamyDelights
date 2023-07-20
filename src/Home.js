@@ -37,7 +37,7 @@ q4:"Can I schedule a cake tasting consultation?",
 a4:"Of course! We offer cake tasting consultations for weddings and large events. Contact us to schedule an appointment and discover the delightful flavors we have to offer.",
 };
 
-const translationFr={
+const translationFr = {
 homeNav:"ACCUEIL",
 aboutNav:"À PROPOS",
 cakesNav:"GÂTEAUX",
