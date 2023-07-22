@@ -457,9 +457,11 @@
 }
 
 .cakeCard .card-title{
+  font-size: 25px ;
  
-  color: #f394af;
-  font-weight: 800
+  color: black;
+  font-weight: 600;
+  
   /* font-family: "SquishyBlue", sans-serif; */
 }
 
