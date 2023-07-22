@@ -687,9 +687,10 @@
 }
 
 #confirm-title{
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 60px;
+  
   color: #f394af;
+  font-family: "SquishyBlue", sans-serif;
 }
 
 #mini-text{
