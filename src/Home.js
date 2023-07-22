@@ -140,7 +140,7 @@ export default function Home() {
             {t("landingPara")}
           </p>
 
-          <div className="buttons-wrapper">
+          <div className="buttons-wrapper col-md-6 col-xs-6">
           <a href="/cakes" className="discover-btn">
             {t("discoverBtn")}
           </a>

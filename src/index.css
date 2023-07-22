@@ -189,6 +189,8 @@
 
 
 
+
+
 .home-content{
   
   margin-top: 100px;
@@ -197,7 +199,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height:100vh;
-  /* border-bottom: 40px solid #ddeae3; */
+  border-bottom: 40px solid #ddeae3; 
   
   
   
