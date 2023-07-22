@@ -55,7 +55,7 @@ const translationFr = {
 homeNav:"ACCUEIL",
 aboutNav:"À PROPOS",
 cakesNav:"GÂTEAUX",
-galleryNav:"GALARIE",
+galleryNav:"GALERIE",
 contactNav:"CONTACTEZ-NOUS",
 helpNav:"AIDER",
 
