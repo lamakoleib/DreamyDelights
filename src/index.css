@@ -584,9 +584,10 @@
   color: #f394af;
 }
 
+
 .form-wrapper{
   background-color: #ddeae3;
-  padding: 20px;
+  padding: 0 300px 0 300px;
   border-radius: 30px;
 }
 
@@ -638,6 +639,44 @@
 
 .continue-btn{
   text-decoration: none;
+}
+
+.back-btn{
+  margin-top: 30px;
+  background-color: #ddeae3;
+  box-shadow: 0 4px 8px rgba(187, 214, 199, 0);
+ 
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: black;
+  font-size: 20px;
+  
+  font-weight: 500;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border-radius: 30px;
+  transition-timing-function: ease-in-out;
+}
+
+.back-btn:hover{
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: #bbd6c7;
+  border-radius: 30px;
+  
+}
+
+.back-image{
+  height: 2vh;
+  margin-top: 40px;
+  
+}
+
+.go-back{
+  display: flex;
+  
+  justify-content: flex-end;
 }
 
 #rc-page{
