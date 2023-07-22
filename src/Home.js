@@ -23,7 +23,7 @@ helpNav:"HELP",
 landingtitle: "Where sweet dreams come to life", 
 landingPara: "Indulge in a world of flavours, where creativity knows no bounds. From classic favourites to unique and innovative creations, our talented cake artisans bring their espertise and passion to every masterpiece they create",
 discoverBtn: "DISCOVER CAKES",
-exploreBtn: "EXLORE GALLERY",
+exploreBtn: "EXPLORE GALLERY",
 
 hassleTitle: "Hassle-Free Experience",
 whoTitle:"Who are we?",
