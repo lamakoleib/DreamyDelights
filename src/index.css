@@ -127,7 +127,7 @@
 .discover-btn{
   
   margin-top: 30px;
-  margin-right: 20px;
+  margin-bottom: 20px;
   background-color: #bbd6c7;
   border-radius: 25px;
   color: white;
@@ -157,8 +157,13 @@
   background-color: white;
   color: #f394af;
   border: 1px solid #f394af;
+  margin: 20px;
+  
 
 
+}
+.buttons-wrapper{
+ padding-bottom: 30px;
 }
 
 #cancel-btn{
@@ -192,7 +197,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height:100vh;
-  border-bottom: 40px solid #ddeae3;
+  /* border-bottom: 40px solid #ddeae3; */
   
   
   

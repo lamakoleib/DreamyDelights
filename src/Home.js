@@ -133,12 +133,14 @@ export default function Home() {
         </div>
       <div className="home-content" id="landing">
         
-        <div className="container">
+        <div className="container home-container">
           
           <h1 className="title-home">{t("landingtitle")}</h1>
           <p className="intro-text">
             {t("landingPara")}
           </p>
+
+          <div className="buttons-wrapper">
           <a href="/cakes" className="discover-btn">
             {t("discoverBtn")}
           </a>
@@ -149,6 +151,9 @@ export default function Home() {
           >
             {t("exploreBtn")}
           </a>
+
+          </div>
+          
         </div>
       </div>
 
