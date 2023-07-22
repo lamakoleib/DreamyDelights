@@ -50,7 +50,7 @@ export default function RequestForm() {
                 type="text"
                 class="form-control"
                 id="allergens"
-                placeholder="Enter any allergens separated by commas"
+                placeholder="Enter any allergens separated by commas, ex: dairy, nuts, gluten, etc."
               ></input>
             </div>
 
