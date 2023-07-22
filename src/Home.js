@@ -6,6 +6,11 @@ import video from './videos/video1.mp4';
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 import {initReactI18next } from "react-i18next";
+import image from "./images/globe.svg";
+
+
+
+//english translations
 
 const translationEn={
 homeNav:"HOME",  
@@ -43,6 +48,8 @@ sendMsg:"Send a message",
 mdHeader:"Is there anything we can help with?",
 modaltxt:" Let us know by typing in your questions and/or concerns and we will respond as soon as possible!",
 placeholder:"What is your concern?"};
+
+//french translations
 
 const translationFr = {
 homeNav:"ACCUEIL",
@@ -85,7 +92,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: {translation: translationEn},
+      en: {translation: translationEn}, //languages available
       fr: {translation: translationFr},
 
     },
@@ -94,6 +101,8 @@ i18n
     interpolation: {escapeValue: false},
 
   });
+
+  
 
   
 
@@ -114,9 +123,12 @@ export default function Home() {
     <div className="home">
       <Navbar/>
       <div className="language-wrapper">
+        <span className="material-symbols-outlined">
+              <img src={image} alt="language" className="globe" />
+        </span>
         <select name="language" id="select-language" className="languages" onChange={onChange}>
               <option value="en">English</option>
-              <option value="fr">Francais</option>
+              <option value="fr">Français</option>
           </select>
         </div>
       <div className="home-content" id="landing">
@@ -175,7 +187,7 @@ export default function Home() {
           <div className="container text-center">
             <h1>FAQ</h1>
             <h5>{t("faqDesc")}</h5>
-            <div className="accordion" id="accordionPanelsStayOpenExample">
+            <div className="accordion " id="accordionPanelsStayOpenExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="panelsStayOpen-headingOne">
                   <button className= "accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">

@@ -11,8 +11,17 @@
   
 }
 
+
+
 .language-wrapper{
   padding: 20px;
+  
+}
+
+.globe{
+  height: 3vh;
+  padding-right: 10px;
+  opacity: 0.8;
   
 }
 
@@ -293,12 +302,13 @@
  .accordion-item{
   border-radius: 30px !important;
   padding: 25px;
+  
   margin: 35px;
   border: 1px solid #f394af !important;
- }
-
  
-
+  
+  
+ }
 
 
  #contact-us{
